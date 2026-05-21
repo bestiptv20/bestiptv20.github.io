@@ -369,6 +369,8 @@ footer{
 
 <!-- Contact -->
 
+<!-- Contact Form -->
+
 <section class="contact" id="contact">
 
     <h2>Contact Us</h2>
@@ -379,17 +381,43 @@ footer{
 
     <div class="contact-form">
 
-        <input type="text" placeholder="Your Name">
+        <form onsubmit="submitMessage(event)">
 
-        <input type="email" placeholder="Your Email">
+            <input type="text" id="name" placeholder="Your Name" required>
 
-        <textarea rows="6" placeholder="Your Message"></textarea>
+            <input type="email" id="email" placeholder="Your Email" required>
 
-        <button>Send Message</button>
+            <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <!-- Fake Success Message -->
+
+        <div id="successMessage" style="display:none; margin-top:20px; color:#22d3ee; font-size:18px;">
+            ✅ Your message has been submitted successfully!
+        </div>
 
     </div>
 
 </section>
+
+<script>
+
+function submitMessage(event){
+
+    event.preventDefault();
+
+    // Show fake success message
+    document.getElementById("successMessage").style.display = "block";
+
+    // Reset form
+    event.target.reset();
+
+}
+
+</script>
 
 <!-- Footer -->
 
