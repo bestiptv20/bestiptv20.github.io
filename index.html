@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreamVerse IPTV</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#020617;
+    color:white;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #1e293b;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#22d3ee;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#22d3ee;
+}
+
+/* Hero */
+
+.hero{
+    padding:100px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#22d3ee;
+    color:black;
+}
+
+.btn-primary:hover{
+    background:#06b6d4;
+}
+
+.btn-secondary{
+    border:1px solid #475569;
+    color:white;
+}
+
+.btn-secondary:hover{
+    border-color:#22d3ee;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Features */
+
+.features{
+    background:#0f172a;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#020617;
+    padding:35px;
+    border-radius:20px;
+    border:1px solid #1e293b;
+}
+
+.feature-card h3{
+    color:#22d3ee;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:#cbd5e1;
+}
+
+/* About */
+
+.about{
+    padding:100px 8%;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+.about-text p{
+    margin-bottom:20px;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* Contact */
+
+.contact{
+    background:#0f172a;
+    padding:100px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#cbd5e1;
+    margin-bottom:40px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:12px;
+    background:#020617;
+    color:white;
+    border:1px solid #334155;
+}
+
+.contact-form button{
+    background:#22d3ee;
+    color:black;
+    padding:14px 35px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#06b6d4;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #1e293b;
+    color:#94a3b8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.about-text h2,
+.contact h2{
+    font-size:38px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+
+<header>
+    <div class="logo">StreamVerse IPTV</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Best IPTV Services & Streaming Guides</h1>
+
+        <p>
+            Discover trusted IPTV services, setup tutorials, streaming apps,
+            and honest IPTV reviews for Firestick, Android TV, Smart TVs,
+            and more.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Explore Services</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop" alt="IPTV">
+    </div>
+
+</section>
+
+<!-- Features -->
+
+<section class="features">
+
+    <h2>Why Choose StreamVerse IPTV?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <h3>IPTV Reviews</h3>
+            <p>
+                Detailed IPTV reviews with pricing, channels,
+                streaming quality, and features.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Setup Tutorials</h3>
+            <p>
+                Step-by-step installation guides for Firestick,
+                Android TV, Smart TVs, and IPTV apps.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Streaming Tips</h3>
+            <p>
+                Learn how to reduce buffering, improve IPTV quality,
+                and stream securely online.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="About">
+    </div>
+
+    <div class="about-text">
+
+        <h2>About Us</h2>
+
+        <p>
+            StreamVerse IPTV is a professional platform dedicated to helping users discover reliable IPTV services and streaming solutions.
+        </p>
+
+        <p>
+            We provide expert IPTV reviews, setup guides, streaming tutorials, and updated information for users worldwide.
+        </p>
+
+        <p>
+            Our mission is to make IPTV streaming easier, safer, and more enjoyable for everyone.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        Have questions about IPTV services or streaming guides? Send us a message.
+    </p>
+
+    <div class="contact-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea rows="6" placeholder="Your Message"></textarea>
+
+        <button>Send Message</button>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+    © 2026 StreamVerse IPTV. All Rights Reserved.
+</footer>
+
+</body>
+</html>
