@@ -1,0 +1,169 @@
+export default function IPTVHubWebsite() {
+  return (
+    <div className="min-h-screen bg-slate-950 text-white font-sans">
+      {/* Header */}
+      <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          <h1 className="text-3xl font-bold text-cyan-400">StreamVerse IPTV</h1>
+
+          <nav className="flex gap-6 text-sm md:text-base">
+            <a href="#home" className="hover:text-cyan-400 transition">Home</a>
+            <a href="#about" className="hover:text-cyan-400 transition">About Us</a>
+            <a href="#contact" className="hover:text-cyan-400 transition">Contact Us</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Home Section */}
+      <section
+        id="home"
+        className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h2 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            Best IPTV Services & Streaming Guides
+          </h2>
+
+          <p className="text-slate-300 text-lg leading-8 mb-8">
+            StreamVerse IPTV helps users discover the best IPTV services,
+            premium streaming apps, setup tutorials, device guides, and honest
+            IPTV reviews for 2026.
+          </p>
+
+          <div className="flex gap-4">
+            <button className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-2xl font-semibold transition">
+              Explore Services
+            </button>
+
+            <button className="border border-slate-600 hover:border-cyan-400 px-6 py-3 rounded-2xl font-semibold transition">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 rounded-3xl p-8 shadow-2xl border border-slate-800">
+          <img
+            src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop"
+            alt="IPTV Streaming"
+            className="rounded-2xl w-full h-[350px] object-cover"
+          />
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="bg-slate-900 py-20 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-12">Why Choose StreamVerse IPTV?</h3>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+              <h4 className="text-2xl font-semibold mb-4 text-cyan-400">
+                IPTV Reviews
+              </h4>
+              <p className="text-slate-300 leading-7">
+                Honest and updated IPTV provider reviews with pricing, channels,
+                and performance analysis.
+              </p>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+              <h4 className="text-2xl font-semibold mb-4 text-cyan-400">
+                Device Tutorials
+              </h4>
+              <p className="text-slate-300 leading-7">
+                Step-by-step setup guides for Firestick, Android TV, Smart TVs,
+                MAG boxes, and more.
+              </p>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+              <h4 className="text-2xl font-semibold mb-4 text-cyan-400">
+                Streaming Tips
+              </h4>
+              <p className="text-slate-300 leading-7">
+                Learn how to improve IPTV performance, reduce buffering, and
+                stream securely online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="max-w-7xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+              alt="About StreamVerse IPTV"
+              className="rounded-3xl shadow-2xl"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-5xl font-bold mb-6">About Us</h3>
+
+            <p className="text-slate-300 text-lg leading-8 mb-6">
+              StreamVerse IPTV is a trusted online platform dedicated to helping
+              users discover reliable IPTV services and streaming solutions.
+            </p>
+
+            <p className="text-slate-300 text-lg leading-8 mb-6">
+              Our goal is to provide expert reviews, detailed tutorials,
+              streaming guides, and up-to-date IPTV information so users can
+              make better decisions.
+            </p>
+
+            <p className="text-slate-300 text-lg leading-8">
+              We focus on quality content, transparency, and user-friendly
+              recommendations for IPTV streaming enthusiasts worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="bg-slate-900 py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-5xl font-bold mb-6">Contact Us</h3>
+
+          <p className="text-slate-300 text-lg mb-12">
+            Have questions about IPTV services, reviews, or streaming guides?
+            Send us a message.
+          </p>
+
+          <form className="grid gap-6 text-left">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            />
+
+            <textarea
+              rows="6"
+              placeholder="Your Message"
+              className="bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-cyan-400"
+            ></textarea>
+
+            <button className="bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-2xl font-semibold transition w-fit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-950 border-t border-slate-800 py-8 text-center text-slate-400">
+        <p>
+          © 2026 StreamVerse IPTV. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  );
+}
